@@ -6,6 +6,17 @@ package taller
 object App {
   def main(args: Array[String]): Unit = {
     println(greeting())
+    val r = new Rectangulo(3,4)
+    val aux = new Rectangulo(4,4)
+
+    println(r.base)
+    println(r.altura)
+    println(r.toString)
+    println(r.area)
+    println(r.perimetro)
+    println(r.esCuadrado)
+    println(aux.esCuadrado)
+    println(r.cabeEn(aux))
   }
 
   def greeting(): String = "Hello, world!"
